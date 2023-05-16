@@ -580,10 +580,10 @@ input[type="tel"] {
 
 
 
-/* .grid2 {
+.grid2 {
   background-color: rgb(52, 158, 255);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-} */
+}
 
 .grid-container2 {
   display: grid;
