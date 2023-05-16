@@ -1,0 +1,144 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.item {
+    position: relative;
+    margin: 1rem;
+    flex: 1 0 calc(25% - 2rem);
+    overflow: hidden;
+    cursor: default;
+}
+
+.item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-out;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+    cursor: default;
+}
+
+.item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+}
+
+.item .overlay h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.item .overlay p {
+    margin: 0;
+    font-size: 1rem;
+    text-align: center;
+}
+
+main {
+    margin-top: 210px;
+}
+
+
+
+
+
+
+
+
+
+.container2 {
+    margin-top: -170px;
+    display: grid;
+    grid-template-columns: repeat(5, 2fr); /* Cria 11 colunas de tamanho igual */
+    gap: px; /* Define o espaçamento entre as colunas */
+    background-color: rgb(1, 134, 255);
+    position: fixed;
+    z-index: 50;
+}
+
+.column {
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.container2 a {
+    color: white;
+    font-size: 23px;
+    font-family:Coolvetica;
+}
+
+
+
+
+
+
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    background-color: rgb(1, 134, 255);
+    border: none;
+    color: #000;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    list-style: none; /* Remove os marcadores de lista */
+    margin: 0; /* Remove as margens padrão da lista */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdown-menu li {
+    padding: 8px 0;
+    display: block;
+  }
+  
+  .dropdown-menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .dropdown-menu a:hover {
+    color: #007bff;
+  }
+  

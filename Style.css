@@ -1,0 +1,762 @@
+@font-face {
+  font-family: "Coolvetica";
+  src: url("BebasNeue-Regular.otf") format("opentype"),
+    url("BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ----------------------------------------------------- Home -------------------------------------------------------------------------------- */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: rgb(1, 134, 255);
+  color: #fff;
+  padding: 35px 0;
+  font-size: 25px;
+  font-family: Coolvetica;
+  border: solid rgb(1, 134, 255);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+nav ul li a {
+  color: rgb(0, 53, 117);
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover,
+nav ul li a:active {
+  color: white;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  background-color: rgb(1, 134, 255);
+  border: none;
+  color: #000;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  display: none;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 8px;
+  list-style: none; /* Remove os marcadores de lista */
+  margin: 0; /* Remove as margens padrão da lista */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li {
+  padding: 8px 0;
+  display: block;
+}
+
+.dropdown-menu a {
+  color: #000;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.dropdown-menu a:hover {
+  color: #007bff;
+}
+
+section#hero {
+  background-image: url(hero.jpg);
+  background-size: cover;
+  color: #fff;
+  padding: 200px 0;
+  text-align: center;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: Coolvetica;
+  margin-top: 30px;
+}
+
+section#hero h2 {
+  margin-top: 0;
+}
+
+section#hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.button {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section#quote {
+  background-color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+section#quote h2 {
+  margin-top: 0;
+}
+
+section#quote form {
+  display: inline-block;
+  text-align: left;
+}
+
+section#quote input[type="text"],
+section#quote input[type="email"],
+section#quote textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+section#quote input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+}
+
+#logo img {
+  width: 60%;
+}
+#logo {
+  position: absolute;
+  top: 0px;
+  left: 17%;
+}
+
+nav {
+  display: inline-block;
+  margin-left: 60%;
+}
+
+nav img {
+  width: 20px;
+  height: 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-left: 0px;
+}
+
+.animated-button {
+  background-color: rgb(89, 204, 235);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-button:hover {
+  background-color: white;
+  color: rgb(89, 204, 231);
+}
+
+.animated-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+}
+
+.animated-button:hover::before {
+  transform: translate(-50%, -50%) scale(2);
+  width: 200px;
+  height: 200px;
+}
+
+#brands ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#brands li {
+  width: 25%;
+  text-align: center;
+}
+
+#brands li img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-img {
+  max-width: 100%;
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  margin-top: 70px;
+}
+
+/* #carrousel img{
+  height: 300px;
+  max-width: 100%;
+} */
+
+#carouselExample {
+  padding: 70px;
+}
+
+#carouselExample h3 {
+  font-size: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: Coolvetica;
+  color: white;
+  margin-top: 20px;
+}
+
+.carousel-container {
+  background-color: rgb(52, 158, 255);
+}
+
+
+.grid-item {
+  text-align: center;
+  
+}
+.grid-item img {
+  width: 90%;
+  height: 200px;
+  margin-bottom: 00px;
+}
+
+.contact-container {
+  overflow: hidden;
+}
+
+.contact-info-container {
+  float: left;
+  width: 50%;
+}
+
+.contact-form-container {
+  float: right;
+  width: 50%;
+}
+
+.contact-info h3 {
+  margin-top: 0;
+}
+
+.zoom-out:hover {
+  transform: scale(0.9); /* diminui a escala da imagem em 10% */
+  transition: transform 0.3s ease-in-out; /* adiciona uma transição suave */
+}
+
+.detalhes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+
+
+/* ---------------------------------------------------------------- SOBRE NÒS --------------------------------------------------------------- */
+
+#sobrenos {
+  font-family: Coolvetica;
+  font-size: 20px;
+  background-color: #dceffb;
+  border: 1px solid #ddd;
+  border-radius: 80px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 90px;
+}
+
+.card-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+  margin-left: 45%;
+}
+
+/* ---------------------------------------------------------------- CONTATOS --------------------------------------------------------------- */
+
+form label,
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: rgb(89, 204, 231);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(1, 134, 255);
+  color: white;
+}
+
+input[type="submit"]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+}
+
+input[type="submit"]:hover::before {
+  transform: translate(-50%, -50%) scale(2);
+  width: 200px;
+  height: 200px;
+}
+
+label[for="phone"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="tel"] {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+#corpo {
+  margin-top: 130px;
+}
+
+/* ---------------------------------------------------------------- PRODUTOS --------------------------------------------------------------- */
+
+
+
+/* PRODUTOS FIM   */
+
+@media screen and (max-width: 767px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  #logo {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  nav {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  #hero {
+    margin-top: 100px;
+  }
+}
+
+#hero {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  position: relative;
+}
+
+#hero img {
+  width: 40%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: rgba(0,0,0,0.3);
+}
+
+.overlay h2,
+.overlay p,
+.overlay button {
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* produtos */
+
+
+
+.grid-item {
+  position: relative;
+}
+
+.grid-item img,
+.grid-item p {
+  font-family: Coolvetica;
+  font-size: 25px;
+  color: black;
+}
+
+.grid-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Estilo para a janela modal */
+.modal {
+  display: none; /* Oculta a janela modal por padrão */
+  position: fixed; /* Posição fixa */
+  z-index: 1; /* Define a ordem de empilhamento */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Habilita o scroll */
+  background-color: rgba(0, 0, 0, 0.9); /* Fundo escuro */
+}
+
+/* Estilo para o conteúdo da janela modal */
+.modal-content {
+  background-color: #fefefe; /* Fundo branco */
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Estilo para o botão de fechar */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Estilo para o botão de fechar quando o mouse passa por cima */
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+/* ----------------------------------------------------- FOOTER -------------------------------------------------------------------------------- */
+
+#footerprodutos{
+  margin-top: 2000px;
+}
+
+
+
+/* .grid2 {
+  background-color: rgb(52, 158, 255);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+} */
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 8px;
+
+}
+
+.grid-item2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-item2 img {
+  max-width: 70%;
+  height: auto;
+}
+
+#titulomarcas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#titulomarcas h3 {
+  font-size: 50px;
+  font-family: Coolvetica;
+  color: black;
+  margin-top: 30px;
+}
+
+
+
+
+#navegacao  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+  
+  #navegacao  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navegacao  li {
+    margin: 0 10px;
+  }
+  
+  #navegacao a {
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px;
+  }
+  
+  #navegacao a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+  .conteudo {
+    /* Definir a margem superior para acomodar a altura da navegação fixa */
+    margin-top: 60px;
+  }
+
+
+
+
+
+
+
+  #botao-topo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(1, 134, 255);
+    color: #fff;
+    font-family: Coolvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #botao-topo:hover {
+    opacity: 0.8;
+  }
+  
+
+
+
+
+
+
+
+
+  .grid-containermenu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    height: 300px; 
+    padding: 50px;  
+  }
+  
+  .grid-itemmenu {
+    padding: 10px;
+    background-color: rgb(1, 134, 255);
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 30px;
+    height: 90px;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .grid-itemmenu a {
+    color: white;
+    font-size: 23px;
+    transition: color 0.3s;
+    font-family: Coolvetica;
+  }
+  
+  .grid-itemmenu:hover {
+    background-color: rgb(51, 181, 255);
+  }
+  
+  .grid-itemmenu:hover a {
+    color: black;
+  }
+  
+  .full-width {
+    grid-column: 1 / span 5;
+    padding: 10px;
+    background-color: rgb(1, 134, 255);
+    border-radius: 30px;
+    transition: background-color 0.3s, color 0.3s;
+    padding: 30px; 
+    height: 90px;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  }
+  
+  .full-width a {
+    color: white;
+    font-size: 23px;
+    transition: color 0.3s;
+    font-family: Coolvetica;
+  }
+  
+  .full-width:hover {
+    background-color: rgb(51, 181, 255);
+  }
+  
+  .full-width:hover a {
+    color: black;
+  }
+  
+  .grid-itemmenu a,
+  .full-width a {
+  text-decoration: none;
+}
+
